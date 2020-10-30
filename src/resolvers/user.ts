@@ -123,6 +123,9 @@ export class UserResolver {
         };
       }
     }
+    //Auto-Login upon Refresh and set cookie
+    // Remove if you dont want user to login as soon as user logs in
+    req.session.userId = user.id;
     return {
       user,
     };
