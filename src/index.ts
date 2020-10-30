@@ -43,7 +43,7 @@ const main = async () => {
         sameSite: "lax", // csrf settings
       },
       saveUninitialized: false,
-      secret: "verysecret",
+      secret: "verysecret", // HIDE IN PROD!!
       resave: false,
     })
   );

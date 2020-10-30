@@ -123,6 +123,9 @@ export class UserResolver {
         };
       }
     }
+    //Auto-Login upon Refresh and set cookie
+    // Remove if you dont want user to login as soon as user logs in
+    req.session.userId = user.id;
     return {
       user,
     };
@@ -160,7 +163,7 @@ export class UserResolver {
         ],
       };
     }
-
+    // Store User id in session (sent as Cookie and stored in redis... can store entire user obj if props are not changing)
     req.session.userId = user.id;
     return {
       user,
