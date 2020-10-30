@@ -20,7 +20,7 @@
 </tr>
 <tr>
 <td  align="center"><a  href="https://graphql.org/"><img  src="https://graphql.org/img/logo.svg "  width="280px"  /></a></td>
-<td  align="center"><a  href="https://www.postgresql.org/"><img  src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/1200px-Postgresql_elephant.svg.png "  width="280px"  /></a></td>
+<td  align="center"><a  href="https://www.postgresql.org/"><img  src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/1200px-Postgresql_elephant.svg.png"  width="280px"  /></a></td>
 <td  align="center">
 <a  href="https://redis.io/"><img  src="https://cdn.auth0.com/blog/logos/redis-icon-logo.png"/></a>
 </td>
