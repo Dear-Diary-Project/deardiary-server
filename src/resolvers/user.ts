@@ -163,7 +163,7 @@ export class UserResolver {
         ],
       };
     }
-
+    // Store User id in session (sent as Cookie and stored in redis... can store entire user obj if props are not changing)
     req.session.userId = user.id;
     return {
       user,
