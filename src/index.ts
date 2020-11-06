@@ -16,7 +16,7 @@ import { UserResolver } from './resolvers/user';
 import { EntryResolver } from './resolvers/entries';
 
 const main = async () => {
-    const conn = await createConnection({
+    await createConnection({
         type: 'postgres',
         database: 'deardiary',
         username: 'pruthvi',
