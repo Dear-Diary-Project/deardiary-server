@@ -2,7 +2,7 @@ version = 1
 
 test_patterns = ["*/tests/**"]
 
-exclude_patterns = ["/dist/**"]
+exclude_patterns = ["dist/**"]
 
 [[analyzers]]
 name = "javascript"

@@ -1,7 +1,7 @@
 import { isAuth } from '../middleware/auth';
-import { Resolver, Query, Arg, Mutation, UseMiddleware } from 'type-graphql';
+import { Resolver, Query, Arg, Mutation, UseMiddleware, Ctx } from 'type-graphql';
 import { Entry } from '../entities/Entry';
-
+import { EntryInput, MyContext } from '../types';
 @Resolver()
 export class EntryResolver {
     @Query(() => [Entry])
@@ -16,8 +16,11 @@ export class EntryResolver {
 
     @Mutation(() => Entry)
     @UseMiddleware(isAuth)
-    async createEntry(@Arg('title') title: string): Promise<Entry> {
-        return Entry.create({ title }).save();
+    async createEntry(@Arg('input') input: EntryInput, @Ctx() { req }: MyContext): Promise<Entry> {
+        return Entry.create({
+            ...input,
+            writerId: req.session.userId,
+        }).save();
     }
 
     @Mutation(() => Entry, { nullable: true })

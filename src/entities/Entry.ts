@@ -18,7 +18,7 @@ export class Entry extends BaseEntity {
     id!: number;
 
     @Field()
-    @Column({ type: 'text' })
+    @Column()
     title!: string;
 
     @Field()
