@@ -2,10 +2,19 @@
 
 ### Backend Code for Dear Diary
 
-[![Build Status](https://travis-ci.org/Dear-Diary-Project/deardiary-server.svg?branch=master)](https://travis-ci.org/Dear-Diary-Project/deardiary-server)
-
+<table>
+<tr>
+<td>
 <a href='https://coveralls.io/github/Dear-Diary-Project/deardiary-server?branch=master'><img src='https://coveralls.io/repos/github/Dear-Diary-Project/deardiary-server/badge.svg?branch=master' alt='Coverage Status' /></a>
-
+</td>
+<td>
+<a href="https://deepscan.io/dashboard#view=project&tid=11089&pid=14469&bid=270309"><img src="https://deepscan.io/api/teams/11089/projects/14469/branches/270309/badge/grade.svg" alt="DeepScan grade"></a>
+</td>
+<td>
+<a href="https://travis-ci.org/Dear-Diary-Project/deardiary-server"><img src="https://travis-ci.org/Dear-Diary-Project/deardiary-server.svg?branch=master" alt="DeepScan grade"></a>
+</td>
+</tr>
+</table>
 <h4><b>Description:</b></h4>
 <p>A GraphQL Api that handles the auth and DB Interface with Postgres and handles Queries for Auth and Entries also uses a Redis-based session system</p>
 <h4>Tech Stack</h4>

@@ -13,8 +13,8 @@ query GetEntry{
 }`;
 
 export const createEntryMutation = `
-mutation CreateEntry($title: String!){
-  createEntry(title:"My Very First Entry"){
+mutation CreateEntry($input: EntryInput!){
+  createEntry(input:$input){
     id
     createdAt
     updatedAt
