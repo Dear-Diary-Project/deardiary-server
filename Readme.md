@@ -2,6 +2,8 @@
 
 ### Backend Code for Dear Diary
 
+[![Build Status](https://travis-ci.org/Dear-Diary-Project/deardiary-server.svg?branch=master)](https://travis-ci.org/Dear-Diary-Project/deardiary-server)
+
 <a href='https://coveralls.io/github/Dear-Diary-Project/deardiary-server?branch=master'><img src='https://coveralls.io/repos/github/Dear-Diary-Project/deardiary-server/badge.svg?branch=master' alt='Coverage Status' /></a>
 
 <h4><b>Description:</b></h4>

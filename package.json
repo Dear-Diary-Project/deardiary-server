@@ -9,7 +9,7 @@
         "start": "node dist/index.js",
         "start-tsn": "ts-node src/index.ts",
         "lint": "eslint '*/**/*.{js,ts,tsx}' --quiet --fix",
-        "coveralls": "jest --coverage && cat ./tests/coverage/lcov.info | coveralls",
+        "coverage": "jest --coverage && cat ./tests/coverage/lcov.info | coveralls",
         "testdb:setup": "ts-node ./src/tests/utils/setup.ts",
         "test": "yarn testdb:setup && jest"
     },
