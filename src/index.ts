@@ -57,9 +57,9 @@ const main = async () => {
     });
 
     apoloServer.applyMiddleware({ app });
-
-    app.listen(4000, () => {
-        console.log('Server Started on localhost:4000');
+    const port = process.env.PORT || '4000';
+    app.listen(port, () => {
+        console.log(`🚀 Server ready at http://localhost:${port}/graphql`);
     });
     //console.log(conn);
 };
