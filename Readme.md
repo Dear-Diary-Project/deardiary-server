@@ -2,6 +2,8 @@
 
 ### Backend Code for Dear Diary
 
+<a href='https://coveralls.io/github/Dear-Diary-Project/deardiary-server?branch=master'><img src='https://coveralls.io/repos/github/Dear-Diary-Project/deardiary-server/badge.svg?branch=master' alt='Coverage Status' /></a>
+
 <h4><b>Description:</b></h4>
 <p>A GraphQL Api that handles the auth and DB Interface with Postgres and handles Queries for Auth and Entries also uses a Redis-based session system</p>
 <h4>Tech Stack</h4>
@@ -63,7 +65,7 @@ Run the Server</li>
 You can then access the GraphQL playground at <code> localhost:4000/graphql</code>
 <h1>Project is still WIP</h1>
 
-[graphql]: https://graphql.org/img/logo.svg "GraphQL"
-[typescript]: https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1200px-Typescript_logo_2020.svg.png "TypeScript"
-[postgres]: https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/1200px-Postgresql_elephant.svg.png "Postgres"
+[graphql]: https://graphql.org/img/logo.svg 'GraphQL'
+[typescript]: https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1200px-Typescript_logo_2020.svg.png 'TypeScript'
+[postgres]: https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/1200px-Postgresql_elephant.svg.png 'Postgres'
 [redis]: https://cdn.auth0.com/blog/logos/redis-icon-logo.png"Redis"
