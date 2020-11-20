@@ -13,6 +13,9 @@
 <td>
 <a href="https://travis-ci.org/Dear-Diary-Project/deardiary-server"><img src="https://travis-ci.org/Dear-Diary-Project/deardiary-server.svg?branch=master" alt="DeepScan grade"></a>
 </td>
+  <td>
+    <a href="https://deepsource.io/gh/Dear-Diary-Project/deardiary-server/?ref=repository-badge" target="_blank"><img alt="DeepSource" title="DeepSource" src="https://deepsource.io/gh/Dear-Diary-Project/deardiary-server.svg/?label=active+issues&show_trend=true"></a>
+  </td>
 </tr>
 </table>
 <h4><b>Description:</b></h4>
