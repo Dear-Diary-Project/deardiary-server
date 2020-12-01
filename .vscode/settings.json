@@ -1,10 +1,4 @@
 {
-    "editor.fontSize": 22,
-    "editor.fontFamily": "Fira Code",
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true,
-    "editor.formatOnPaste": true,
-    "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": true
-    }
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": true
 }

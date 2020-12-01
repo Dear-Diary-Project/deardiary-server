@@ -19,7 +19,8 @@ const main = async () => {
     await createConnection({
         type: 'postgres',
         database: 'deardiary',
-        username: 'pruthvi',
+        username: 'postgres',
+        password:'password',
         logging: true,
         synchronize: true,
         entities: [Entry, User],
