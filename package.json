@@ -3,7 +3,11 @@
     "version": "0.0.1",
     "description": "Backend For DearDiary App",
     "main": "index.js",
+    "engines": {
+        "node": "12.18.4"
+    },
     "scripts": {
+        "build": "tsc",
         "watch": "tsc -w",
         "dev": "nodemon dist/index.js",
         "start": "node dist/index.js",
@@ -11,7 +15,9 @@
         "lint": "eslint '*/**/*.{js,ts,tsx}' --quiet --fix",
         "coverage": "jest --coverage && cat ./coverage/lcov.info | coveralls",
         "testdb:setup": "ts-node ./src/tests/utils/setup.ts",
-        "test": "yarn testdb:setup && jest"
+        "test": "yarn testdb:setup && jest",
+        "postinstall": "tsc",
+        "deploy": "git add . && git commit -m Heroku && git push heroku master"
     },
     "repository": {
         "type": "git",
