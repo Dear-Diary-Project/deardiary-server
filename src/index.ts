@@ -11,7 +11,7 @@ import connectRedis from 'connect-redis';
 import { Entry } from './entities/Entry';
 import { User } from './entities/User';
 import { HelloResolver } from './resolvers/hello';
-import { __prod__ } from './constants';
+import { DATABASE_URL, __prod__ } from './constants';
 import { UserResolver } from './resolvers/user';
 import { EntryResolver } from './resolvers/entries';
 
@@ -19,10 +19,18 @@ const main = async () => {
     await createConnection({
         type: 'postgres',
         database: 'deardiary',
-        username: 'pruthvi',
+        url: DATABASE_URL,
         logging: true,
         synchronize: true,
         entities: [Entry, User],
+        ssl: __prod__ ? true : false,
+        extra: __prod__
+            ? {
+                  ssl: {
+                      rejectUnauthorized: false,
+                  },
+              }
+            : '',
     });
 
     const app = express();
